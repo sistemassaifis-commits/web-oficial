@@ -1,7 +1,8 @@
 # Sitio web — SAIFIS SAS
 
 Sitio de una sola página para SAIFIS SAS (medicina física y rehabilitación,
-San Andrés, Providencia y Santa Catalina), listo para publicar en GitHub Pages.
+San Andrés, Providencia y Santa Catalina), ya publicado en:
+https://sistemassaifis-commits.github.io/web-oficial/
 
 ## Estructura
 
@@ -11,48 +12,40 @@ css/styles.css
 js/main.js
 images/dra-sharlett.jpg
 images/saifis-logo.png
+images/favicon.ico
 ```
 
-## Cómo subirlo a GitHub Pages (paso a paso)
+## Cómo subir cambios (recordatorio)
 
-1. Entra a github.com y crea un repositorio nuevo (por ejemplo `saifis-web`).
-   Puede ser público. No marques "Add a README" si vas a subir estos archivos.
-2. En tu computador, entra a esta carpeta (`output`) y sube el contenido al
-   repositorio. La forma más fácil sin usar la terminal:
-   - En la página del repositorio en GitHub, haz clic en **"Add file" → "Upload files"**.
-   - Arrastra **todo el contenido** de esta carpeta (el archivo `index.html`,
-     y las carpetas `css`, `js`, `images`) — no la carpeta `output` en sí,
-     sino lo que está adentro.
-   - Haz clic en **"Commit changes"**.
-3. Ve a **Settings → Pages** (en el menú lateral del repositorio).
-4. En "Build and deployment", en **Source**, elige **"Deploy from a branch"**.
-5. En **Branch**, elige `main` y la carpeta `/ (root)`. Guarda.
-6. Espera 1–2 minutos. GitHub te mostrará la URL pública, algo como:
-   `https://tu-usuario.github.io/saifis-web/`
+1. En tu repositorio en GitHub, entra a **"Add file" → "Upload files"**.
+2. Arrastra los archivos que cambiaron (o todos, si prefieres reemplazar
+   completo) manteniendo la misma estructura de carpetas (`css/`, `js/`,
+   `images/`).
+3. Haz commit. El sitio se actualiza solo en 1–2 minutos, en la misma URL.
 
-Cada vez que subas un cambio a los archivos, el sitio se actualiza solo
-(puede tardar uno o dos minutos).
+## Datos de contacto usados en el sitio
 
-## Antes de publicar, revisa esto con tu amigo
+- WhatsApp (único, en la sección de contacto): **+57 312 225 5858**
+- Correos: `saifis.sanandres@gmail.com` y `shary30@hotmail.com`
+  (el primero se corrigió de un error de tipeo en el portafolio original,
+  que decía `gmailcom` sin el punto — confírmalo si no es el correcto)
+- Botón de agendar cita / contacto (header, hero y sección de contacto):
+  `https://forms.gle/L1aUPAdturfcY8hf6`
+- Ubicación: Edificio Aniro, tercer piso, consultorio 301, San Andrés Islas
+  — con agenda en Providencia y Santa Catalina
 
-- El correo `saifis.sanandres@gmailcom` en el portafolio original parece
-  tener un error de tipeo (le falta el punto). Lo corregí como
-  `saifis.sanandres@gmail.com` en el sitio — confirma que ese sea el correo
-  correcto antes de publicar.
-- El segundo correo (`shary30@hotmail.com`) se tomó tal cual del portafolio.
-- Los dos botones de WhatsApp usan los números `316 316 3834` y
-  `314 543 7976`. Confirma que esos sean los números correctos de WhatsApp
-  (no solo de llamada).
-- El botón de contacto (header, hero y sección de contacto) ya apunta al
-  formulario: `https://forms.gle/L1aUPAdturfcY8hf6`.
-- La foto de la doctora se tomó del portafolio en PowerPoint; si tienes una
-  foto de mejor resolución, reemplaza `images/dra-sharlett.jpg` (mismo
-  nombre de archivo) para que se vea más nítida.
-- El logo (`images/saifis-logo.png`) es el archivo que subiste directamente
-  en el chat.
+## Imágenes
 
-## Editar contenido
+- `images/saifis-logo.png` — el logo que subiste directamente en el chat.
+- `images/dra-sharlett.jpg` — foto de la Dra. Sharlett Marie Moreno Stephens,
+  tomada del portafolio en PowerPoint (resolución algo baja; si consiguen
+  una mejor, reemplaza el archivo manteniendo el mismo nombre).
+- `images/favicon.ico` — ícono que se muestra en la pestaña del navegador.
+
+## Editar contenido más adelante
 
 Todo el texto está directamente en `index.html`, organizado por secciones
-con comentarios (`<!-- SERVICIOS -->`, etc.). Los colores y tipografía están
-centralizados como variables al inicio de `css/styles.css`.
+con comentarios (`<!-- SERVICIOS -->`, `<!-- CONTACTO -->`, etc.). Los
+colores y la tipografía están centralizados como variables al inicio de
+`css/styles.css` (busca `:root`). Las animaciones y el menú móvil están en
+`js/main.js`.
